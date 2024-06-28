@@ -136,7 +136,7 @@ body {
 }
 
 .top-box {
-  background: rgba(111, 48, 48, 0.6);
+  background: rgba(59, 26, 26, 0.6);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 9px );
   -webkit-backdrop-filter: blur( 9px );
@@ -149,7 +149,7 @@ body {
 }
 
 .top-box-desktop {
-  background: rgba(111, 48, 48, 0.6);
+  background: rgba(59, 25, 25, 0.6);
   box-shadow: 0 8px 32px 0 rgba(15, 18, 65, 0.37);
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin-bottom: 5%;
