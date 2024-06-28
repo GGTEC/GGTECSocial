@@ -508,7 +508,7 @@ table tr{
 .animated-button {
   width: 100%;
   font-family: 'Kanit';
-  background: linear-gradient(-30deg, #010205 50%, #08142b 50%);
+  background: linear-gradient(-30deg, #050101 50%, #2b0808 50%);
   padding: 20px 40px;
   display: inline-block;
   -webkit-transform: translate(0%, 0%);
@@ -624,7 +624,7 @@ table tr{
   left: 0px;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, rgba(8, 20, 43, 0), #6b4a8c);
+  background: linear-gradient(to right, rgba(8, 20, 43, 0), #8c4a4a);
   -webkit-animation: 2s animateBottom linear infinite;
           animation: 2s animateBottom linear infinite;
 }
@@ -656,7 +656,7 @@ table tr{
   left: 0px;
   height: 100%;
   width: 2px;
-  background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #6b4a8c);
+  background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #8c4a4a);
   -webkit-animation: 2s animateLeft linear -1s infinite;
           animation: 2s animateLeft linear -1s infinite;
 }
