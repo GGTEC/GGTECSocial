@@ -127,7 +127,7 @@ body {
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
   margin-top: var(--bs-gutter-y);
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.0);
   box-shadow: 0 8px 32px 0 rgba(16, 20, 72, 0.37);
 }
 
