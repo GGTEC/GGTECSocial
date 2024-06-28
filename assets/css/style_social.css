@@ -128,7 +128,7 @@ body {
   padding-left: calc(var(--bs-gutter-x) * .5);
   margin-top: var(--bs-gutter-y);
   background: rgba(0, 0, 0, 0.0);
-  box-shadow: 0 8px 32px 0 rgba(16, 20, 72, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .links-list button p{
@@ -137,7 +137,7 @@ body {
 
 .top-box {
   background: rgba(59, 26, 26, 0.6);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur( 9px );
   -webkit-backdrop-filter: blur( 9px );
   border-radius: 10px;
