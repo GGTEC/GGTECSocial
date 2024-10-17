@@ -68,7 +68,9 @@
 }
 
 body {
-  background-image: linear-gradient(to left top, #000000, #31030e, #9e001b, #cd0000);
+  background-color: #000 !important;
+  background-image: url("../img/BG.png");
+  background-size: cover;
 }
 
 
@@ -149,6 +151,15 @@ body {
 }
 
 .top-box-desktop {
+  background: rgba(59, 25, 25, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(15, 18, 65, 0.37);
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-bottom: 5%;
+  color: #fff;
+  font-family: 'Kanit';
+}
+
+.box-desktop {
   background: rgba(59, 25, 25, 0.6);
   box-shadow: 0 8px 32px 0 rgba(15, 18, 65, 0.37);
   border: 1px solid rgba( 255, 255, 255, 0.18 );
