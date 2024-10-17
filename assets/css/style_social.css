@@ -71,6 +71,7 @@ body {
   background-color: #000 !important;
   background-image: url("../img/BG.png");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 
@@ -78,6 +79,7 @@ body {
   width: 6px;
   height: 6px;
 }
+
 
 ::-webkit-scrollbar-thumb {
   background: #600000;
