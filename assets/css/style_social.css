@@ -214,6 +214,6 @@ body::before {
 }
 
 
-.glass-card h4 {
+.glass-card h4,h3 {
   color: var(--text);
 }
