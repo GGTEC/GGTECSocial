@@ -11,169 +11,6 @@
     <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
-    <style>
-        :root {
-            --bg-1: #0d0a0a;        /* fundo profundo escuro quente */
-            --bg-2: #1a0f10;        /* tom quente suave */
-            --card-bg: rgba(255,255,255,0.06);
-            --card-bd: rgba(255,255,255,0.12);
-            --text: #f3eaea;
-            --muted: #c9a8a8;
-            --accent: #ff2d55;     /* vermelho principal */
-            --accent-2: #ff6b6b;    /* vermelho claro/rose */
-            --success: #22c55e;
-        }
-
-        body {
-            font-family: "Kanit", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-            color: var(--text);
-            background: radial-gradient(1200px 800px at 10% -10%, #3a0d0d 0%, transparent 60%),
-                        radial-gradient(1000px 700px at 110% 10%, #2a0b0e 0%, transparent 55%),
-                        linear-gradient(180deg, var(--bg-1), var(--bg-2));
-            min-height: 100vh;
-        }
-
-        .social-page {
-            padding: clamp(16px, 2vw, 24px);
-        }
-
-        .glass-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-bd);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-            backdrop-filter: saturate(140%) blur(10px);
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .brand h1 {
-            font-weight: 800;
-            letter-spacing: .5px;
-            margin: 0;
-            font-size: clamp(28px, 3.2vw, 44px);
-            background: linear-gradient(90deg, #fff, #ffd0d0 30%, #ff6b6b);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        .brand h3 {
-            color: var(--muted);
-            margin: 4px 0 0;
-            font-size: clamp(16px, 1.4vw, 20px);
-            font-weight: 600;
-        }
-
-        .benefits h4 {
-            font-weight: 700;
-        }
-        .benefits {
-            display: flex;
-            flex-direction: column;
-            min-height: 100%;
-            gap: 8px;
-        }
-        .benefits-content {
-            flex: 1 1 auto;
-        }
-        .benefits ul {
-            margin: 16px 0 0;
-        }
-        .benefits li {
-            margin: 8px 0;
-            color: var(--text);
-        }
-        .disclaimer {
-            color: var(--muted);
-            border-top: 1px dashed rgba(255,255,255,0.15);
-            padding-top: 10px;
-            margin-top: 6px;
-        }
-        .disclaimer p { margin: 0; }
-        .cta-wrapper {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .btn-cta {
-            --shine: linear-gradient(120deg, transparent, rgba(255,255,255,.4), transparent);
-            background: linear-gradient(135deg, var(--accent), var(--accent-2));
-            color: #ffffff;
-            font-weight: 800;
-            border: none;
-            border-radius: 12px;
-            padding: 14px 22px;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            box-shadow: 0 8px 24px rgba(255, 45, 85, 0.25);
-            position: relative;
-            overflow: hidden;
-            transition: transform .2s ease, box-shadow .2s ease;
-        }
-        .btn-cta::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: var(--shine);
-            transform: translateX(-200%);
-            transition: transform .6s ease;
-        }
-        .btn-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 28px rgba(255, 45, 85, 0.35);
-        }
-        .btn-cta:hover::after {
-            transform: translateX(200%);
-        }
-
-        /* Botões de links */
-        .links-card h5 {
-            color: var(--muted);
-            margin-bottom: 14px;
-        }
-        .links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 12px;
-        }
-        .link-btn {
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 12px;
-            color: var(--text);
-            text-decoration: none;
-            padding: 12px 14px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: border-color .2s ease, background .2s ease, transform .15s ease;
-        }
-        .link-btn:hover {
-            background: rgba(255,255,255,0.06);
-            border-color: rgba(255, 80, 80, 0.55);
-            transform: translateY(-1px);
-        }
-        .link-btn i {
-            color: #ff8f8f;
-        }
-
-        footer p {
-            color: var(--muted);
-            margin: 0;
-        }
-
-        /* Ajustes de imagem */
-        .logo-img {
-            width: clamp(120px, 16vw, 180px);
-            height: auto;
-        }
-    </style>
 </head>
 <body>
     <main class="social-page container">
@@ -185,89 +22,91 @@
                     <h3>INSCRIÇÃO</h3>
                 </div>
             </div>
-            <div class="row g-4 align-items-stretch">
-                <div class="col-lg-7">
-                    <div class="glass-card h-100 p-4 p-md-4 benefits">
-                        <div class="benefits-content">
-                            <h4>Assinando sub você tem as seguintes vantagens:</h4>
-                            <ul class="mt-5">
-                                <li>Prioridade em jogos com vagas limitadas</li>
-                                <li>Grupo no WhatsApp exclusivo para subs</li>
-                                <li>Sorteio mensal com premios variados e personalizados</li>
-                                <li>Participar do servidor de minecraft</li>
-                                <li>Notificação personalizada quando enviar heart-me</li>
-                                <li>Prioridade nos comentários</li>
-                                <li>10k de pontos do bot</li>
-                            </ul>
-                        </div>
-                        <div class="disclaimer">
-                            <p class="small d-flex flex-column">
-                                <span>As vantagens podem sofrer alterações sem aviso prévio para todos os subs*</span>
-                                <span>O GGTEC tem o critério de não aceitar o usuário como sub ou não fornecer uma ou mais vantagens.*</span>
-                            </p>
-                        </div>
-                        <div class="cta-wrapper">
-                            <a class="btn-cta" href="https://invoice.infinitepay.io/plans/gg_tec/39tQIklvPR" target="_blank" rel="noopener">
-                                <i class="bi bi-lightning-fill"></i>
-                                ASSINAR
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
+        </section>
+        <div class="row g-4 align-items-stretch">
+            <div class="col-lg-8 d-flex flex-column gap-4">
+                <div class="glass-card h-100 p-4 p-md-4 benefits">
+                    <div class="benefits-content">
+                        <h4>Assinando sub você tem as seguintes vantagens:</h4>
+                        <ul class="mt-5">
+                            <li>Prioridade em jogos com vagas limitadas</li>
+                            <li>Grupo no WhatsApp exclusivo para subs</li>
+                            <li>Sorteio mensal com premios variados e personalizados</li>
+                            <li>Participar do servidor de minecraft</li>
+                            <li>Notificação personalizada quando enviar heart-me</li>
+                            <li>Prioridade nos comentários</li>
+                            <li>10k de pontos do bot</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="glass-card h-100 p-4 links-card">
-                        <h5 class="mb-3">Links</h5>
-                        <div class="links-grid">
-                            <a class="link-btn" href="https://livepix.gg/ggtec" target="_blank" rel="noopener">
-                                Livepix
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                            <a class="link-btn" href="https://livepix.gg/ggtec/sub" target="_blank" rel="noopener">
-                                Virar Sub
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                            <a class="link-btn" href="https://github.com/GGTEC/VibesBot/releases/" target="_blank" rel="noopener">
-                                VIBESBOT (TIKTOK)
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                            <a class="link-btn" href="https://vibesbot.com.br/cmd" target="_blank" rel="noopener">
-                                Comandos Live
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                            <a class="link-btn" href="https://www.instagram.com/gg_tec_ofc/" target="_blank" rel="noopener">
-                                Instagram
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                            <a class="link-btn" href="https://www.tiktok.com/@gg_tec" target="_blank" rel="noopener">
-                                TikTok
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                            <a class="link-btn" href="https://www.facebook.com/gaming/GGTECOFC" target="_blank" rel="noopener">
-                                Twitch
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                            <a class="link-btn" href="https://discord.com/invite/utm5NZq" target="_blank" rel="noopener">
-                                Discord
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                            <a class="link-btn" href="https://www.youtube.com/@GGTEC" target="_blank" rel="noopener">
-                                YouTube
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                            <a class="link-btn" href="https://twitter.com/gg_tec_ofc" target="_blank" rel="noopener">
-                                Twitter
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                            <a class="link-btn" href="https://github.com/GGTEC" target="_blank" rel="noopener">
-                                GitHub
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
+                    <div class="disclaimer">
+                        <p class="small d-flex flex-column">
+                            <span>As vantagens podem sofrer alterações sem aviso prévio para todos os subs*</span>
+                            <span>O GGTEC tem o critério de não aceitar o usuário como sub ou não fornecer uma ou mais vantagens.*</span>
+                        </p>
+                    </div>
+                    <div class="cta-wrapper">
+                        <a class="btn-cta" href="https://invoice.infinitepay.io/plans/gg_tec/39tQIklvPR" target="_blank" rel="noopener">
+                            <i class="bi bi-lightning-fill"></i>
+                            ASSINAR
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <div class="col-lg-4 d-flex flex-column gap-4">
+                <section class="glass-card p-4 d-lg-block">
+                    <h5 class="mb-3" style="color:var(--muted)">Links</h5>
+                    <div class="links-grid">
+                        <a class="link-btn" href="https://livepix.gg/ggtec" target="_blank" rel="noopener">
+                            Livepix
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <a class="link-btn" href="https://livepix.gg/ggtec/sub" target="_blank" rel="noopener">
+                            Virar Sub
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <a class="link-btn" href="https://github.com/GGTEC/VibesBot/releases/" target="_blank" rel="noopener">
+                            VIBESBOT (TIKTOK)
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <a class="link-btn" href="https://vibesbot.com.br/cmd" target="_blank" rel="noopener">
+                            Comandos Live
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <a class="link-btn" href="https://www.instagram.com/gg_tec_ofc/" target="_blank" rel="noopener">
+                            Instagram
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <a class="link-btn" href="https://www.tiktok.com/@gg_tec" target="_blank" rel="noopener">
+                            TikTok
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <a class="link-btn" href="https://www.facebook.com/gaming/GGTECOFC" target="_blank" rel="noopener">
+                            Twitch
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <a class="link-btn" href="https://discord.com/invite/utm5NZq" target="_blank" rel="noopener">
+                            Discord
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <a class="link-btn" href="https://www.youtube.com/@GGTEC" target="_blank" rel="noopener">
+                            YouTube
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <a class="link-btn" href="https://twitter.com/gg_tec_ofc" target="_blank" rel="noopener">
+                            Twitter
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        <a class="link-btn" href="https://github.com/GGTEC" target="_blank" rel="noopener">
+                            GitHub
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+        </div>
 
         <footer class="text-center py-3">
             <p>Social links page Dev by GGTEC</p>

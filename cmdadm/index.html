@@ -23,196 +23,98 @@
 </head>
 
 <body class="vh-100">
-    <div class="mobile">
-        <div class="container">
-            <div class="text-center">
-                <div class="top-box p-3">
-                    <img src="../assets/favicons/android-chrome-512x512.png" alt="" width="100px">
-                    <h1>Comandos</h1>
-                    <h4>Esses são os comandos utilizados no chat das lives, as respostas são exibidas na tela.</h4>
-                </div>
-                <div class="bg-dark text-white p-3">
-                    <h4>Comandos públicos</h4>
-                </div>
-                <div class="bg-dark text-white p-3 mb-3">
-                    <div class="w-100" style="max-height: 60vh;overflow-y: scroll;">
-                        <table class="table table-dark table-striped" id="table">
-                            <thead>
-                                <th>Comando</th>
-                                <th>Descrição</th>
-                                <th>Custo</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>!baluser</td>
-                                    <td>Nome de usuário | Verifica o saldo do usuário.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!baltake</td>
-                                    <td>Nome de usuário 100 | Tira os pontos do usuário.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!balgive</td>
-                                    <td>Nome de usuário 100 | Dá pontos ao usuário.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!fila</td>
-                                    <td>Nome de usuário | Se o usuário tiver os pontos, ele é adicionado à fila de
-                                        próximo.
-                                    </td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!rfila</td>
-                                    <td>Nome de usuário | Remove o usuário da fila.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!sr</td>
-                                    <td>Nome da música | Comando provisório para moderadores, analisando como adicionar
-                                        pedidos de música sem prejudicar as transmissões.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!skip</td>
-                                    <td>Pula a música atual.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!volume VALOR</td>
-                                    <td>Ajusta o volume de acordo com o valor digitado. Se não digitar nada, exibe
-                                        somente o
-                                        volume atual na tela.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!esorteio</td>
-                                    <td>Executa o sorteio e exibe o ganhador na tela, se houver algum sorteio no
-                                        momento.
-                                    </td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!lsorteio</td>
-                                    <td>Limpa a lista de participantes do sorteio.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!csorteio Nome de usuário</td>
-                                    <td>Verifica o nome de usuário na lista de sorteio.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!addsorteio Nome de usuário</td>
-                                    <td>Adiciona o nome de usuário no sorteio.</td>
-                                    <td>-</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+    <main class="social-page container">
 
+        <section class="glass-card p-4 p-md-5 mb-4">
+            <div class="brand mb-3">
+                <img class="logo-img" src="../assets/favicons/android-chrome-512x512.png" alt="GGTEC logo" width="75px" height="75px">
+                <div>
+                    <h1>Comandos para moderadores</h1>
+                    <p class="mt-4">Esses são os comandos utilizados por moderadores no chat das lives, as respostas são exibidas na tela.</p>
+                </div>
+            </div>
+        </section>
+        <div class="glass-card p-3 mb-3">
+            <div class="w-100" style="max-height: 60vh;overflow-y: scroll;">
+                <table class="glass-table align-middle mb-0" id="table">
+                    <thead>
+                        <th>Comando</th>
+                        <th>Descrição</th>
+                        <th>Custo</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>!baluser</td>
+                            <td>Nome de usuário | Verifica o saldo do usuário.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!baltake</td>
+                            <td>Nome de usuário 100 | Tira os pontos do usuário.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!balgive</td>
+                            <td>Nome de usuário 100 | Dá pontos ao usuário.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!fila</td>
+                            <td>Nome de usuário | Se o usuário tiver os pontos, ele é adicionado à fila de
+                                próximo.
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!rfila</td>
+                            <td>Nome de usuário | Remove o usuário da fila.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!sr</td>
+                            <td>Nome da música | Comando provisório para moderadores, analisando como adicionar
+                                pedidos de música sem prejudicar as transmissões.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!skip</td>
+                            <td>Pula a música atual.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!volume VALOR</td>
+                            <td>Ajusta o volume de acordo com o valor digitado. Se não digitar nada, exibe
+                                somente o
+                                volume atual na tela.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!esorteio</td>
+                            <td>Executa o sorteio e exibe o ganhador na tela, se houver algum sorteio no
+                                momento.
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!lsorteio</td>
+                            <td>Limpa a lista de participantes do sorteio.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!csorteio Nome de usuário</td>
+                            <td>Verifica o nome de usuário na lista de sorteio.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>!addsorteio Nome de usuário</td>
+                            <td>Adiciona o nome de usuário no sorteio.</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </div>
-
-    <div class="desktop">
-        <div class="container d-flex flex-column pb-5">
-            <div class="row top-box-desktop w-100 d-flex align-items-center">
-                <div class="col-2 d-flex align-items-center m-2">
-                    <img src="../assets/favicons/android-chrome-512x512.png" alt="" width="200px">
-                </div>
-                <div class="col-8 p-5">
-                    <h1>Comandos</h1>
-                    <h3>Esses são os comandos utilizados no chat das lives, as respostas são exibidas na tela.</h3>
-                </div>
-            </div>
-            <div class="bg-dark text-white p-3">
-                <h4>Comandos Para moderadores</h4>
-            </div>
-            <div class="bg-dark text-white p-3 mt-3">
-                <div class="w-100" style="max-height: 60vh;overflow-y: scroll;">
-                    <table class="table table-dark table-striped " id="table-m">
-                        <thead>
-                            <th>Comando</th>
-                            <th>Descrição</th>
-                            <th>Custo</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>!baluser</td>
-                                <td>Nome de usuário | Verifica o saldo do usuário.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!baltake</td>
-                                <td>Nome de usuário 100 | Tira os pontos do usuário.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!balgive</td>
-                                <td>Nome de usuário 100 | Dá pontos ao usuário.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!fila</td>
-                                <td>Nome de usuário | Se o usuário tiver os pontos, ele é adicionado à fila de próximo.
-                                </td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!rfila</td>
-                                <td>Nome de usuário | Remove o usuário da fila.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!sr</td>
-                                <td>Nome da música | Comando provisório para moderadores, analisando como adicionar
-                                    pedidos de música sem prejudicar as transmissões.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!skip</td>
-                                <td>Pula a música atual.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!volume VALOR</td>
-                                <td>Ajusta o volume de acordo com o valor digitado. Se não digitar nada, exibe somente o
-                                    volume atual na tela.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!esorteio</td>
-                                <td>Executa o sorteio e exibe o ganhador na tela, se houver algum sorteio no momento.
-                                </td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!lsorteio</td>
-                                <td>Limpa a lista de participantes do sorteio.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!csorteio Nome de usuário</td>
-                                <td>Verifica o nome de usuário na lista de sorteio.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!addsorteio Nome de usuário</td>
-                                <td>Adiciona o nome de usuário no sorteio.</td>
-                                <td>-</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    </main>
 </body>
 
 </html>
