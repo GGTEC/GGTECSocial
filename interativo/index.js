@@ -15,15 +15,16 @@ function buyProduct() {
 	let price = 100; // valor padrão em centavos
 	let description = 'Interação na live';
 	let order_id = 'pedido_01' ;
-	
+
 	if (interactionType === '10zombies') {
 		price = 100;
 		description = '10 Zumbis na live GGTEC';
-		order_id = 'pedido_10zombies_001';
+		order_id = 'zombies_001';
 	}
 	// Monte o corpo da requisição
 	const body = {
-		customer_id: 'cliente_001',
+		//utilizar um ID único para cada cliente
+		customer_id: customer_name,
 		customer_name: customer_name,
 		price: price,
 		description: description,
