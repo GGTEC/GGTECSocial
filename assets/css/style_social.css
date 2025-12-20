@@ -217,3 +217,13 @@ body::before {
 .glass-card h4,h3,li,h6 {
   color: var(--text);
 }
+
+input {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: var(--accent);
+}
+
+label {
+  color: var(--text) !important;
+}
