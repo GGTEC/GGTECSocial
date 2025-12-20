@@ -21,6 +21,20 @@
 
 <body>
     <main class="social-page container">
+    <script>
+    // Preenche os campos do produto ao carregar a página
+    document.addEventListener('DOMContentLoaded', function() {
+        const interactionType = localStorage.getItem('interactionType') || '10zombies';
+        let title = 'Produto';
+        let price = 'R$ 10,00';
+        if (interactionType === '10zombies') {
+            title = '10 Zumbis';
+            price = 'R$ 10,00';
+        }
+        document.getElementById('product_title').textContent = title;
+        document.getElementById('product_price').textContent = price;
+    });
+    </script>
         <!-- Cabeçalho / Sobre -->
         <section class="glass-card p-4 p-md-5 mb-4">
             <div class="brand mb-3">
