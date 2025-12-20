@@ -26,10 +26,10 @@
     document.addEventListener('DOMContentLoaded', function() {
         const interactionType = localStorage.getItem('interactionType') || '10zombies';
         let title = 'Produto';
-        let price = 'R$ 10,00';
+        let price = 'R$ 1,00';
         if (interactionType === '10zombies') {
             title = '10 Zumbis';
-            price = 'R$ 10,00';
+            price = 'R$ 1,00';
         }
         document.getElementById('product_title').textContent = title;
         document.getElementById('product_price').textContent = price;

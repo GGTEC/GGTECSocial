@@ -12,11 +12,11 @@ function buyProduct() {
 	const interactionType = localStorage.getItem('interactionType') || '10zombies';
 	const customer_name = document.getElementById('product_user_name')?.value || 'Cliente';
 	// Defina os dados do produto conforme o tipo de interação
-	let price = 1000; // valor padrão em centavos
+	let price = 100; // valor padrão em centavos
 	let description = 'Interação na live';
 	let order_id = 'pedido_' + Math.floor(Math.random() * 1000000);
 	if (interactionType === '10zombies') {
-		price = 1000;
+		price = 100;
 		description = '10 Zumbis na live GGTEC';
 	}
 	// Monte o corpo da requisição
