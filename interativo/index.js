@@ -37,16 +37,14 @@ function buyProduct() {
 	})
 	.then(response => response.json())
 	.then(data => {
-		if (data && data.checkout_url) {
+		if (data && data.url) {
 			// Redireciona para o link de pagamento
-			window.location.href = data.checkout_url;
+			window.location.href = data.url;
 		} else {
-			alert('Erro ao criar checkout. Tente novamente.');
 			console.error('Resposta inesperada:', data);
 		}
 	})
 	.catch(error => {
-		alert('Erro ao criar checkout.');
 		console.error('Erro ao criar checkout:', error);
 	});
 }
