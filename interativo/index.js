@@ -15,6 +15,7 @@ function buyProduct() {
 	let price = 100; // valor padrão em centavos
 	let description = 'Interação na live';
 	let order_id = 'pedido_01' ;
+	
 	if (interactionType === '10zombies') {
 		price = 100;
 		description = '10 Zumbis na live GGTEC';
