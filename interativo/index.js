@@ -124,30 +124,11 @@ function renderProducts() {
 document.addEventListener('DOMContentLoaded', renderProducts);
 
 
-// Função chamada ao clicar em "Comprar" na index.html
-function buyProduct(interactionType, customerName) {
+function createCheckout(customer_name, price, order_id) {
 
-	localStorage.setItem('customerName', customerName);
-	// Exemplo de dados, pode ser customizado conforme o produto/interação
-
-	const customer_name = document.getElementById('product_user_name')?.value || 'Cliente';
-	// Defina os dados do produto conforme o tipo de interação
-	let price = 100; // valor padrão em centavos
-	let description = 'Interação na live';
-	let order_id = 'pedido_01' ;
-
-	if (interactionType === '10zombies') {
-		price = 100;
-		description = '10 Zumbis na live GGTEC';
-		order_id = 'zombies_001';
-	}
-	// Monte o corpo da requisição
 	const body = {
-		//utilizar um ID único para cada cliente
-		customer_id: customer_name,
 		customer_name: customer_name,
 		price: price,
-		description: description,
 		order_id: order_id
 	};
 	// Envia a requisição para criar o checkout
@@ -170,4 +151,31 @@ function buyProduct(interactionType, customerName) {
 	.catch(error => {
 		console.error('Erro ao criar checkout:', error);
 	});
+}
+
+// Função chamada ao clicar em "Comprar" na index.html
+function buyProduct(interactionType, customerName) {
+
+	localStorage.setItem('customerName', customerName);
+	// Exemplo de dados, pode ser customizado conforme o produto/interação
+
+	const customer_name = document.getElementById('product_user_name')?.value || 'Cliente';
+	fetch('https://pixinterativo.vercel.app/load_product?product_id=' + interactionType)
+	.then(response => response.json())
+	.then(product => {
+		if (!product) {
+			console.error('Produto não encontrado');
+			return;
+		}
+
+		const price = product.price;
+		const order_id = product.product_id;
+
+		createCheckout(customer_name, price, order_id);
+	})
+	.catch(error => {
+		console.error('Erro ao carregar produto:', error);
+	});
+	
+	
 }
