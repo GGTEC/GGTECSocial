@@ -14,10 +14,11 @@ function buyProduct() {
 	// Defina os dados do produto conforme o tipo de interação
 	let price = 100; // valor padrão em centavos
 	let description = 'Interação na live';
-	let order_id = 'pedido_' + Math.floor(Math.random() * 1000000);
+	let order_id = 'pedido_01' ;
 	if (interactionType === '10zombies') {
 		price = 100;
 		description = '10 Zumbis na live GGTEC';
+		order_id = 'pedido_10zombies_001';
 	}
 	// Monte o corpo da requisição
 	const body = {
